@@ -1,1 +1,1 @@
-# selegi.org
+theme: jekyll-theme-modernist
