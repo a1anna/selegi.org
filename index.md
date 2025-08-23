@@ -1,5 +1,4 @@
 ---
----
 layout: default
 title: Selegi — Currency of the Islands
 ---
