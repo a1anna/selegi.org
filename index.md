@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Selegi — Currency of the Islands
----
+<link rel="stylesheet" href="/assets/css/custom.css">
 
 # Selegi
 **Currency of the Islands** — fast, low-fee, community-first payments built on Stellar.
