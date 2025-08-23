@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Selegi
+<link rel="stylesheet" href="/assets/css/custom.css">
 permalink: /about/
 ---
 
