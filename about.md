@@ -1,8 +1,8 @@
 ---
-layout: default
-title: About
+layout: page
+title: About Selegi
+permalink: /about/
 ---
 
-# About
+Selegi is a community-driven token rooted in Pacific values and modern tech. Our mission is to make payments simple for families, vendors, and diaspora.
 
-This is my website! I built it using GitHub Pages and Jekyll.
