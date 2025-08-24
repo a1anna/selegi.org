@@ -1,13 +1,21 @@
 :root{
-  --bg:#0b1220;        /* deep navy */
-  --card:#111a2b;
-  --text:#e9f0ff;      /* near white */
-  --muted:#b9c6ff;
-  --accent:#39c6ff;    /* cyan accent */
-  --accent-2:#7dffb0;  /* mint accent (hover) */
+  /* Ocean core */
+  --bg:#0b1220;          /* deep navy background */
+  --card:#ffffff;        /* sand pack bright cards */
+  --text:#e9f0ff;        /* ocean near-white text */
+  --muted:#b9c6ff;       /* ocean muted text */
+
+  /* Accent colors */
+  --accent:#39c6ff;      /* cyan primary accent */
+  --accent-2:#0d6efd;    /* sand’s blue secondary accent */
+  --accent-3:#7dffb0;    /* mint hover option */
+
+  /* Fonts */
   --font-body: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
   --font-head: Poppins, Inter, var(--font-body);
-  --base-size: 18px;   /* change this to make everything larger/smaller */
+
+  /* Base sizing */
+  --base-size: 18px;
 }
 
 /* Base */
@@ -21,8 +29,12 @@ body{
   margin:0;
 }
 
-/* Type scale */
-h1,h2,h3,h4{font-family:var(--font-head); margin:1.2em 0 .4em}
+/* Headings */
+h1,h2,h3,h4{
+  font-family:var(--font-head);
+  margin:1.2em 0 .4em;
+  line-height:1.2;
+}
 h1{font-weight:700; letter-spacing:.3px; font-size:clamp(2rem,4.5vw,3rem)}
 h2{font-weight:700; font-size:clamp(1.5rem,3.5vw,2.25rem)}
 h3{font-weight:600; font-size:clamp(1.25rem,3vw,1.5rem)}
@@ -30,16 +42,20 @@ p,li{color:var(--text)}
 small,.muted{color:var(--muted)}
 
 /* Links & buttons */
-a{color:var(--accent); text-decoration:none}
-a:hover{color:var(--accent-2); text-decoration:underline}
-
-/* Cards/sections (optional) */
-.section, .card{
-  background:var(--card);
-  border-radius:16px;
-  padding:1.2rem 1.2rem;
-  box-shadow:0 10px 30px rgba(0,0,0,.25);
+a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:500;
+}
+a:hover{
+  color:var(--accent-2);
+  text-decoration:underline;
 }
 
-/* Images */
-img{max-width:100%; height:auto; border-radius:12px}
+/* Cards / Sections */
+.section,.card{
+  background:var(--card);
+  color:#1b1b1b; /* darker text inside bright card */
+  border-radius:16px;
+  padding:1.5rem;
+  margin:1.5rem 0
