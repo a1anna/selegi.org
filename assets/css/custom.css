@@ -97,3 +97,35 @@ img{max-width:100%; height:auto; border-radius:12px}
 .card small {
   color: #5a6b7a; /* soft gray-blue for secondary text */
 }
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer img {
+  height: 40px;
+  width: auto;
+  margin-bottom: .5rem;
+}
+
+footer p {
+  color: #5a6b7a; /* muted gray-blue */
+  font-size: .95rem;
+  margin: 0.5rem 0;
+}
+
+footer nav a {
+  color: var(--accent-2); /* blue accent links */
+  text-decoration: none;
+  margin: 0 .5rem;
+  font-size: .95rem;
+  font-weight: 500;
+}
+
+footer nav a:hover {
+  color: var(--accent); /* cyan hover */
+  text-decoration: underline;
+}
