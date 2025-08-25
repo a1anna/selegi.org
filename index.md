@@ -59,12 +59,22 @@ title: "Selegi — Currency of the Islands"
 </div>
 
 <!-- Footer -->
-<footer style="text-align:center; padding:2rem 1rem; margin-top:3rem;">
+<footer>
   <img src="{{ '/assets/images/token.png' | relative_url }}?v={{ site.time | date: '%s' }}"
-       alt="Selegi Token"
-       style="height:40px; width:auto; margin-bottom:.5rem;">
-  <p class="muted" style="margin:0;">
-    © <span id="year"></span> Selegi — Currency of the Islands
-  </p>
+       alt="Selegi Token" />
+
+  <p>© <span id="year"></span> Selegi — Currency of the Islands</p>
+
+  <nav>
+    <a href="https://stellar.expert/explorer/public/asset/SELEGI-GBXHLUI5ZHKHYMJ3YB55YI5ZD3DOUXODWG2QPB6K5JQKEGZKJDLZR4XY" target="_blank">
+      StellarExpert
+    </a>
+    ·
+    <a href="/.well-known/stellar.toml" target="_blank">Stellar TOML</a>
+    ·
+    <a href="mailto:contact@selegi.org">Contact</a>
+  </nav>
+
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
+
