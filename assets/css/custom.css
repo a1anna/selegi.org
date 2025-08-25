@@ -74,3 +74,20 @@ img{max-width:100%; height:auto; border-radius:12px}
 .container{max-width:1100px; margin:0 auto; padding:0 1rem}
 .center{text-align:center}
 
+/* Darker text inside Sand cards */
+.card {
+  color: #2b2b2b; /* rich dark gray for body text */
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card h4 {
+  color: #111111; /* nearly black for headings */
+}
+
+.card p,
+.card li,
+.card small {
+  color: #2b2b2b; /* same as card default, ensures consistency */
+}
