@@ -1,52 +1,46 @@
 ---
-layout: none
+layout: default
 title: "Selegi — Currency of the Islands"
 ---
 
-<section style="text-align:center; padding:2.5rem 1rem;">
-  <h1 style="margin:0 0 .5rem 0;">Welcome to <span>Selegi</span></h1>
-  <p style="max-width:720px; margin:0 auto 1rem; font-size:1.1rem;">
+<!-- Hero Section -->
+<section class="hero" style="text-align:center; padding:3rem 1rem;">
+  <h1 style="display:flex; align-items:center; justify-content:center; gap:12px; margin:0;">
+    <img src="{{ '/assets/images/token.png' | relative_url }}?v={{ site.time | date: '%s' }}"
+         alt="Selegi Token"
+         style="height:48px; width:auto; vertical-align:middle;">
+    <span>Selegi</span>
+  </h1>
+  <p style="color:var(--muted); font-size:1.2rem; margin-top:.75rem;">
     Secure • Fast • Community-powered currency for the Pacific Islands.
   </p>
-  <!-- Replace with your real image path once uploaded -->
-  <img src="/assets/images/token.png" alt="Selegi Token" width="220" style="max-width:100%; height:auto;">
 </section>
 
-<hr style="max-width:900px; margin:2rem auto;">
-
-<section style="max-width:900px; margin:0 auto; padding:1rem;">
-  <h2>What is Selegi?</h2>
+<!-- Token Card -->
+<div class="card" style="max-width:700px; margin:2rem auto;">
+  <h2>Our Token</h2>
   <p>
-    Selegi is a digital token designed for the Samoan archipelago—remittances, everyday purchases,
-    and community commerce—built on the Stellar network for speed, affordability, and accessibility.
+    The Selegi Token is built to connect communities and power local economies.
   </p>
+  <img src="{{ '/assets/images/token.png' | relative_url }}?v={{ site.time | date: '%s' }}"
+       alt="Selegi Token" width="180" style="display:block; margin:1rem auto;">
+</div>
 
-  <h3>Quick Details</h3>
-  <ul>
-    <li><strong>Issuer (Faiva):</strong> <code>GBXHLUI5ZHKHYMJ3YB55YI5ZD3DOUXODWG2QPB6K5JQKEGZKJDLZR4XY</code></li>
-    <li><strong>Asset Code:</strong> <code>SELEGI</code></li>
-    <li><strong>Stellar TOML:</strong> <code>/.well-known/stellar.toml</code></li>
-    <li><strong>StellarExpert:</strong> <a href="https://stellar.expert/explorer/public/asset/SELEGI-GBXHLUI5ZHKHYMJ3YB55YI5ZD3DOUXODWG2QPB6K5JQKEGZKJDLZR4XY">View SELEGI</a></li>
-  </ul>
+## Quick Details
+- **Issuer (Faiva):** `GBXHLUI5ZHKHYMJ3YB55YI5ZD3DOUXODWG2QPB6K5JQKEGZKJDLZR4XY`  
+- **Asset Code:** `SELEGI`  
+- **Stellar TOML:** `/.well-known/stellar.toml`  
+- **StellarExpert:** [View SELEGI on StellarExpert](https://stellar.expert/explorer/public/asset/SELEGI-GBXHLUI5ZHKHYMJ3YB55YI5ZD3DOUXODWG2QPB6K5JQKEGZKJDLZR4XY)
 
-  <h3>How to Use It</h3>
-  <ol>
-    <li>Install a Stellar wallet (Lobstr, Solar, or Freighter).</li>
-    <li>Add a trustline to <strong>SELEGI</strong> issued by the key above.</li>
-    <li>Receive, send, and hold Selegi in seconds with tiny fees.</li>
-  </ol>
+### What is Selegi?
+Selegi is a digital token designed for the Samoan archipelago—remittances, everyday purchases, and community commerce. Built on the Stellar network for speed, affordability, and accessibility.
 
-  <h3>Roadmap</h3>
-  <ul>
-    <li>Stablecoin backing (1:1 reserve)</li>
-    <li>Vendor integrations and QR payments</li>
-    <li>On/Off ramps for fiat and USDC</li>
-  </ul>
-</section>
+### How to Use It
+1. Install a Stellar wallet (Lobstr, Solar, or Freighter).  
+2. Add a trustline to **SELEGI** issued by the key above.  
+3. Receive, send, and hold Selegi in seconds with tiny fees.  
 
-<hr style="max-width:900px; margin:2rem auto;">
-
-<footer style="text-align:center; padding:1rem; font-size:.95rem;">
-  <p>© <span id="year"></span> Selegi — Currency of the Islands</p>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</footer>
+### Roadmap
+- Stablecoin backing (1:1 reserve)  
+- Vendor integrations and QR payments  
+- On/Off ramps for fiat and USDC
