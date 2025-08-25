@@ -1,2 +1,49 @@
-title: Selegi — Currency of the Islands
-description: Selegi is a community-first digital currency for the Samoan archipelago, built on Stellar for fast, low-fee payments.
+# ====== Site basics ======
+title: "Selegi — Currency of the Islands"
+description: "Fast, low-fee, community-first payments for the Pacific Islands. Built on Stellar."
+url: "https://www.selegi.org"   # matches your CNAME
+baseurl: ""                      # keep empty when using a root domain like www.selegi.org
+timezone: Pacific/Honolulu
+permalink: pretty
+
+# ====== Build settings ======
+# We’ll run without a theme to avoid conflicts with our custom CSS.
+theme: null
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+# GitHub Pages–supported plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Make sure GitHub Pages includes your Stellar TOML path
+include:
+  - .well-known/stellar.toml
+  - .well-known
+
+# Don’t publish misc files/folders
+exclude:
+  - README.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - tmp
+
+# ====== Sensible defaults ======
+# Every Markdown/HTML page uses the "default" layout by default
+# (You can override with `layout: none` on any page, like your temporary index.md)
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
