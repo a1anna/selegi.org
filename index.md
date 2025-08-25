@@ -4,13 +4,19 @@ title: "Selegi — Currency of the Islands"
 ---
 
 <!-- Hero Section -->
-<section class="hero" style="text-align:center; padding:3rem 1rem;">
-  <h1 style="display:flex; align-items:center; justify-content:center; gap:12px; margin:0;">
-    <img src="{{ '/assets/images/token.png' | relative_url }}?v={{ site.time | date: '%s' }}"
-         alt="Selegi Token" style="height:56px; width:auto; vertical-align:middle;">
+<section class="hero" style="padding:3rem 1rem;">
+  <h1 style="
+    display:flex; align-items:center; justify-content:center; gap:14px; margin:0;
+    font-size:clamp(2.2rem,5vw,3.4rem);
+  ">
+    <img
+      src="{{ '/assets/images/token.png' | relative_url }}?v={{ site.time | date: '%s' }}"
+      alt="Selegi Token"
+      style="height:110px; width:auto; vertical-align:middle;"
+    >
     <span>Selegi</span>
   </h1>
-  <p class="muted" style="font-size:1.2rem; margin-top:.75rem;">
+  <p class="muted" style="font-size:1.15rem; text-align:center; margin-top:.75rem;">
     Secure • Fast • Community-powered currency for the Pacific Islands.
   </p>
 </section>
