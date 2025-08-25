@@ -17,7 +17,7 @@ title: "Selegi — Currency of the Islands"
     <span>Selegi</span>
   </h1>
   <p class="muted" style="font-size:1.15rem; text-align:center; margin-top:.75rem;">
-    Secure • Fast • Community-powered currency for the Pacific Islands.
+    SECURE • FAST • COMMUNITY-POWERED CURRENCY FOR THE PACIFC ISLANDS.
   </p>
 </section>
 
