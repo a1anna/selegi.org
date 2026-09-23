@@ -1,0 +1,22 @@
+NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
+
+ACCOUNTS=[
+  "GBXHLUI5ZHKHYMJ3YB55YI5ZD3DOUXODWG2QPB6K5JQKEGZKJDLZR4XY",
+  "GAQJTETMLZFCXQZNBNRFMQW4YLJA24T56TFF6RAKDCH6LDKNJJB25UE7"
+]
+
+VERSION="2.0.0"
+
+[DOCUMENTATION]
+ORG_NAME="SELEGI"
+ORG_URL="https://selegi.org"
+ORG_DESCRIPTION="SELEGI is an experimental digital asset built on the Stellar network, exploring digital payments and commerce for Pacific communities."
+
+[[CURRENCIES]]
+code="SELEGI"
+issuer="GBXHLUI5ZHKHYMJ3YB55YI5ZD3DOUXODWG2QPB6K5JQKEGZKJDLZR4XY"
+display_decimals=7
+name="SELEGI"
+desc="SELEGI is an experimental digital asset issued on the Stellar network."
+status="test"
+is_asset_anchored=false
