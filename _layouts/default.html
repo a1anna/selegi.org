@@ -2,20 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
     <title>{{ page.title | default: site.title }}</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Ocean + Sand stylesheet -->
-    <link rel="stylesheet"
-          href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
-
-    <!-- Tiny inline fallback so you instantly see the dark background -->
-    <style>
-      :root { --bg:#0b1220; --text:#e9f0ff; --muted:#b9c6ff; }
-      body { background: var(--bg); color: var(--text); margin:0; }
-      .muted { color: var(--muted); }
-    </style>
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/custom.css' | relative_url }}?v={{ site.time | date: '%s' }}"
+    />
   </head>
+
   <body>
     {{ content }}
   </body>
