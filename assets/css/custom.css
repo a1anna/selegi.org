@@ -1,181 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 :root{
-  /* Ocean core */
-  --bg:#0b1220;
-  --card:#0d6efd;        /* SELEGI blue cards */
-  --text:#e9f0ff;
-  --muted:#b9c6ff;
+  /* SELEGI BRAND COLORS */
+  --ocean-dark: #0b1220;
+  --ocean-soft: #111a2b;
 
-  /* Accents */
-  --accent:#39c6ff;
-  --accent-2:#0d6efd;
-  --accent-3:#7dffb0;
+  /* Main SELEGI blue */
+  --selegi-blue: #39bdf2;
 
-  /* Fonts */
-  --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-head: "Kalam", cursive;
-  --base-size:18px;
+  /* Accent blue */
+  --selegi-blue-dark: #168fc4;
+
+  /* ʻIe / Pacific accents */
+  --ie-gold: #e8b63e;
+  --ie-red: #d90000;
+
+  --white: #ffffff;
+  --text: #e9f0ff;
+  --muted: #b9c6ff;
+
+  /* TYPOGRAPHY */
+  --font-body: "Poppins", sans-serif;
+  --font-heading: "Fredoka", sans-serif;
+
+  --base-size: 18px;
 }
 
 
-/* Base */
+/* =========================
+   BASE
+   ========================= */
 
 html{
   scroll-behavior:smooth;
 }
 
 body{
-  background:var(--bg);
+  margin:0;
+  background:var(--ocean-dark);
   color:var(--text);
   font-family:var(--font-body);
   font-size:var(--base-size);
   line-height:1.65;
-  margin:0;
 }
 
 
-/* Typography */
+/* =========================
+   HEADINGS
+   ========================= */
 
-h1,h2,h3,h4{
-  margin:1.2em 0 .4em;
-  line-height:1.2;
-}
-
-h1{
-  font-family:"Poppins", sans-serif;
-  font-weight:600;
-  letter-spacing:.3px;
-  font-size:clamp(2rem,4.5vw,3rem);
-}
-
-h2,h3,h4{
-  font-family:var(--font-head);
+h1,
+h2,
+h3,
+h4{
+  font-family:var(--font-heading);
   font-weight:700;
+  line-height:1.15;
+  text-transform:lowercase;
+  letter-spacing:-0.5px;
 }
 
-h2{
-  font-size:clamp(1.7rem,3.5vw,2.4rem);
+
+/* =========================
+   HERO / LOGO AREA
+   ========================= */
+
+.hero{
+  text-align:center;
+  padding:4rem 2rem;
+  background:linear-gradient(
+    135deg,
+    var(--ocean-dark),
+    var(--ocean-soft)
+  );
 }
 
-h3{
-  font-size:clamp(1.3rem,3vw,1.7rem);
+.hero h1{
+  color:var(--selegi-blue);
+  font-family:var(--font-heading);
+  font-size:clamp(3rem,7vw,5rem);
+  font-weight:700;
+  text-transform:lowercase;
 }
 
-p,li{
-  color:var(--text);
-}
-
-small,.muted{
+.hero p{
   color:var(--muted);
+  font-family:var(--font-body);
+  font-size:1.1rem;
+  max-width:1100px;
+  margin:1rem auto;
 }
 
 
-/* Links */
+/* =========================
+   CARDS
+   ========================= */
 
-a{
-  color:var(--accent);
-  text-decoration:none;
-  font-weight:500;
+.section,
+.card{
+  background:var(--selegi-blue);
+  color:var(--white);
+
+  border-radius:18px;
+  padding:1.75rem;
+  margin:1.5rem auto;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.20);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
 }
 
-a:hover{
-  color:var(--accent-3);
-  text-decoration:underline;
-}
-
-
-/* Cards */
-
-.section,.card{
-  background:var(--card);
-  color:#ffffff;
-  border-radius:16px;
-  padding:1.5rem;
-  margin:1.5rem 0;
-  box-shadow:0 10px 30px rgba(0,0,0,.2);
-  transition:transform .2s ease, box-shadow .2s ease;
-}
-
-.section:hover,.card:hover{
+.section:hover,
+.card:hover{
   transform:translateY(-3px);
-  box-shadow:0 12px 36px rgba(0,0,0,.28);
+  box-shadow:0 14px 38px rgba(0,0,0,.28);
 }
 
 
-/* Card typography */
+/* CARD HEADINGS */
 
 .card h1,
 .card h2,
 .card h3,
 .card h4{
-  color:#ffffff;
-  font-family:"Kalam", cursive;
+  color:var(--white);
+  font-family:var(--font-heading);
   font-weight:700;
-}
-
-.card p,
-.card li,
-.card small{
-  color:#ffffff;
-}
-
-.card .muted,
-.card small{
-  color:#e9f0ff;
-}
-
-
-/* Hero */
-
-.hero{
-  text-align:center;
-  padding:4rem 1rem;
-  background:linear-gradient(
-    135deg,
-    var(--bg) 0%,
-    #111a2b 100%
-  );
-}
-
-
-/* Lowercase SELEGI wordmark */
-
-.hero h1{
-  color:var(--accent);
-  font-family:"Poppins", sans-serif;
-  font-size:clamp(2.5rem,5vw,3.5rem);
-  font-weight:600;
   text-transform:lowercase;
 }
 
 
-/* Hero tagline */
+/* CARD TEXT */
 
-.hero p{
-  color:var(--muted);
-  font-family:"Poppins", sans-serif;
-  font-size:clamp(.75rem,1.6vw,1.05rem);
-
-  max-width:none;
-  width:100%;
-
-  white-space:nowrap;
-
-  margin:1rem auto;
+.card p,
+.card li{
+  color:var(--white);
+  font-family:var(--font-body);
 }
 
 
-/* Images */
+/* =========================
+   LINKS
+   ========================= */
+
+a{
+  color:var(--selegi-blue);
+  text-decoration:none;
+  font-weight:600;
+}
+
+a:hover{
+  color:var(--white);
+  text-decoration:underline;
+}
+
+.card a{
+  color:var(--white);
+  font-weight:700;
+}
+
+
+/* =========================
+   IMAGES
+   ========================= */
 
 img{
   max-width:100%;
   height:auto;
-  border-radius:12px;
 }
 
 
-/* Utilities */
+/* =========================
+   LAYOUT
+   ========================= */
 
 .container{
   max-width:1100px;
@@ -188,12 +187,15 @@ img{
 }
 
 
-/* Footer */
+/* =========================
+   FOOTER
+   ========================= */
 
 footer{
   text-align:center;
   padding:2rem 1rem;
   margin-top:3rem;
+
   border-top:1px solid rgba(255,255,255,.1);
 }
 
@@ -204,36 +206,17 @@ footer img{
 }
 
 footer p{
-  color:#5a6b7a;
+  color:var(--muted);
   font-size:.95rem;
-  margin:.5rem 0;
 }
 
 footer nav a{
-  color:var(--accent-2);
-  text-decoration:none;
+  color:var(--selegi-blue);
   margin:0 .5rem;
   font-size:.95rem;
-  font-weight:500;
+  font-weight:600;
 }
 
 footer nav a:hover{
-  color:var(--accent);
-  text-decoration:underline;
-}
-
-
-/* Mobile */
-
-@media (max-width:600px){
-
-  .hero{
-    padding:3rem .5rem;
-  }
-
-  .hero p{
-    white-space:normal;
-    font-size:.85rem;
-  }
-
+  color:var(--white);
 }
